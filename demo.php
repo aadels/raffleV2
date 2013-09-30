@@ -28,7 +28,7 @@
 
 			The winning number is <?=$winningNumber?>! <br><br>
 
-			<?php foreach($contestants as $name => $status): ?>
+			<?php foreach($_POST as $name => $status): ?>
 				<?=$name?> is a <?=$status?><br>
 			<?php endforeach; ?>
 		<?php endif; ?>	
