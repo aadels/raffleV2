@@ -7,7 +7,7 @@
 		$winningNumber = rand(1,$numberOfContestants);
 
 		/*loop through all contestants*/
-		foreach($_POST as $inputName => $value{
+		foreach($_POST as $inputName => $value){
 	
 			/*get random number*/
 			$randomNumber = rand(1,$numberOfContestants);
