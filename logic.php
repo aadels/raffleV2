@@ -7,7 +7,7 @@
 		$winningNumber = rand(1,$numberOfContestants);
 
 		/*loop through all contestants*/
-		foreach($_POST as $inputName => $status{
+		foreach($_POST as $inputName => $status){
 	
 			/*get random number*/
 			$randomNumber = rand(1,$numberOfContestants);
@@ -17,7 +17,7 @@
 			if ($value != ""){
 
 				if ($randomNumber == $winningNumber){
-					$contestants[$status] = "winner!";
+					$contestants[$status] = "Winner!";
 				}
 				else{
 					$contestants[$status] = "Loser :(";
