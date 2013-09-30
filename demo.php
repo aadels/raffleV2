@@ -22,17 +22,16 @@
 			<input type='text' name='contestant5'><br>
 			<input type='submit'value='Pick a winner!'><br>	
 		</form>
-		
-	 
-		The winning number is <?=$winningNumber?>! <br><br>
 
-		<? foreach($contestants as $name => $status): ?>
-			<?=$name?> is a <?=$status?><br>
-		<? endforeach; ?>
+	    <!--print results if form submitted-->
+		<?php if(?_POST): ?>
 
-		<br><br>
+			The winning number is <?=$winningNumber?>! <br><br>
 
-		<?=$message?>
+			<?php<foreach($contestants as $name => $status): ?>
+				<?=$name?> is a <?=$status?><br>
+			<?php endforeach; ?>
+		<?php endif; ?>	
 
 	</body>
 
