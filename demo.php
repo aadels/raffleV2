@@ -28,8 +28,8 @@
 
 			The winning number is <?=$winningNumber?>! <br><br>
 
-			<?php foreach($_POST as $name => $status): ?>
-				<?=$name?> is a <?=$status?><br>
+			<?php foreach($contestants as $index => $value): ?>
+				<?=$index?> is a <?=$value?><br>
 			<?php endforeach; ?>
 		<?php endif; ?>	
 

@@ -7,7 +7,7 @@
 		$winningNumber = rand(1,$numberOfContestants);
 
 		/*loop through all contestants*/
-		foreach($_POST as $inputName => $status){
+		foreach($_POST as $inputName => $value{
 	
 			/*get random number*/
 			$randomNumber = rand(1,$numberOfContestants);
@@ -17,22 +17,12 @@
 			if ($value != ""){
 
 				if ($randomNumber == $winningNumber){
-					$contestants[$status] = "Winner!";
+					$contestants[$value] = "Winner!";
 				}
 				else{
-					$contestants[$status] = "Loser :(";
+					$contestants[$value] = "Loser :(";
 				}
 			}
 		}
 	}
-/*print message about winner(s), no winner, or tie
-	if ($numberOfWinners > 1){
-		$message = "We have a tie!";
-	}
-	elseif($numberOfWinners < 1){
-		$message = "No winners this time. :(";
-	}
-	else{
-		$message = "We have a winner!";
-	}*/
 ?>
