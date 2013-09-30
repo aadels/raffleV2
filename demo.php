@@ -24,7 +24,7 @@
 		</form>
 
 	    <!--print results if form submitted-->
-		<?php if(?_POST): ?>
+		<?php if($_POST): ?>
 
 			The winning number is <?=$winningNumber?>! <br><br>
 
