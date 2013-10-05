@@ -9,7 +9,7 @@
 		/*loop through all contestants*/
 		# $inputName will be the name of the input field such as "contestant1" or "contestant2"
 		# $value will be whatever was typed into that field
-		$count = 0
+		$count = 0;
 		foreach($_POST as $inputName => $value){
 
 			//Save names in an array
